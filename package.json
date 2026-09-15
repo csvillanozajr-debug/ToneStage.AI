@@ -1,0 +1,22 @@
+{
+  "name": "guitar-effects",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Guitar effects pedalboard simulator with Web Audio, PWA, and Render",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "guitar",
+    "effects",
+    "pedal",
+    "web-audio",
+    "pwa"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
