@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Guitar Effects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#111111" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <h1>Guitar Effects</h1>
+        <p class="subtitle">Pedalboard simulator with Web Audio</p>
+      </header>
+
+      <main class="pedalboard" id="pedalboard">
+        <!-- Pedals injected by app.js -->
+      </main>
+
+      <aside class="controls">
+        <button id="initAudioBtn">Enable Audio</button>
+        <button id="savePresetBtn">Save Preset</button>
+        <button id="loadPresetBtn">Load Preset</button>
+        <select id="presetSelect">
+          <option value="">Select preset…</option>
+        </select>
+      </aside>
+
+      <section class="io-section">
+        <label>
+          Input gain
+          <input type="range" id="inputGain" min="0" max="2" step="0.01" value="1" />
+        </label>
+        <label>
+          Output gain
+          <input type="range" id="outputGain" min="0" max="2" step="0.01" value="1" />
+        </label>
+      </section>
+    </div>
+
+    <script src="app.js" type="module"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("sw.js")
+          .catch((err) => console.warn("SW registration failed:", err));
+      }
+    </script>
+  </body>
+</html>
