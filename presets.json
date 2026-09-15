@@ -1,0 +1,82 @@
+[
+  {
+    "id": "preset-clean",
+    "name": "Clean",
+    "state": {
+      "pedals": [
+        {
+          "id": "pedal-0",
+          "type": "overdrive",
+          "on": false,
+          "knobs": [
+            { "param": "Gain", "value": 0.2 },
+            { "param": "Tone", "value": 0.5 },
+            { "param": "Level", "value": 0.5 }
+          ]
+        },
+        {
+          "id": "pedal-1",
+          "type": "distortion",
+          "on": false,
+          "knobs": [
+            { "param": "Drive", "value": 0.2 },
+            { "param": "Tone", "value": 0.5 },
+            { "param": "Volume", "value": 0.5 }
+          ]
+        },
+        {
+          "id": "pedal-2",
+          "type": "delay",
+          "on": false,
+          "knobs": [
+            { "param": "Time", "value": 0.4 },
+            { "param": "Feedback", "value": 0.3 },
+            { "param": "Mix", "value": 0.3 }
+          ]
+        }
+      ],
+      "inputGain": 1,
+      "outputGain": 0.4
+    }
+  },
+  {
+    "id": "preset-rock",
+    "name": "Rock",
+    "state": {
+      "pedals": [
+        {
+          "id": "pedal-0",
+          "type": "overdrive",
+          "on": true,
+          "knobs": [
+            { "param": "Gain", "value": 0.6 },
+            { "param": "Tone", "value": 0.6 },
+            { "param": "Level", "value": 0.7 }
+          ]
+        },
+        {
+          "id": "pedal-1",
+          "type": "distortion",
+          "on": false,
+          "knobs": [
+            { "param": "Drive", "value": 0.3 },
+            { "param": "Tone", "value": 0.5 },
+            { "param": "Volume", "value": 0.5 }
+          ]
+        },
+        {
+          "id": "pedal-2",
+          "type": "delay",
+          "on": true,
+          "knobs": [
+            { "param": "Time", "value": 0.35 },
+            { "param": "Feedback", "value": 0.25 },
+            { "param": "Mix", "value": 0.25 }
+          ]
+        }
+      ],
+      "inputGain": 1.1,
+      "outputGain": 0.45
+    }
+  }
+]
